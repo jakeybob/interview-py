@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# bob misc
+questions_generic_bob.json
+questions_specific_bob.json

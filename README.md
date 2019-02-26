@@ -11,3 +11,4 @@ Script has two functions:
 ## Notes:
 1. this script relies on macOS system level `say` command, and has not been tested on any other system. (I *think* `say` can be installed via e.g. `apt-get install gnustep-gui-runtime` on Debian-likes but have no idea if it works)
 2. the `save_all_as_audio()` function relies on a functioning `ffmpeg` install being in the PATH
+3. python version >= 3.5
