@@ -169,7 +169,8 @@ def save_all_as_audio(voices_list, questions_dict, my_voice_name, path_to_file):
 
     system("ffmpeg -f concat -i " + "files.txt " + "-c copy output.aiff")
     system("ffmpeg -i output.aiff -codec:a libmp3lame -qscale:a 8 output.mp3")
-    system("cp output.mp3 ~/Library/Mobile\ Documents/com~apple~CloudDocs/Misc/output.mp3")
+    # below will copy to iCloud folder "Misc"
+    # system("cp output.mp3 ~/Library/Mobile\ Documents/com~apple~CloudDocs/Misc/output.mp3")
 
     # remove unwanted files
     for file in files:
@@ -196,7 +197,7 @@ if __name__ == "__main__":
     questions = {**GENERIC_INTERVIEW_QUESTIONS, **SPECIFIC_INTERVIEW_QUESTIONS}
 
     # comment in/out below for functionality
-    do_interview(voices, questions, my_voice, min_rate=150, max_rate=250)   # performs interactive interview
-    # save_all_as_audio(voices, questions, my_voice, 'test.aiff')            # write out a full interview to output.mp3
+    # do_interview(voices, questions, my_voice, min_rate=150, max_rate=250)   # performs interactive interview
+    save_all_as_audio(voices, questions, my_voice, 'test.aiff')            # write out a full interview to output.mp3
 
 

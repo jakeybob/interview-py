@@ -4,7 +4,7 @@ A python script that performs a mock job interview using macOS's system level te
 Questions/answers are defined in the `questions_generic.json` and `questions_specific.json` files.
 
 Script has two functions:
-1. `do_interview()` will perform a mock interview using the voices defined in the script, and the questions from the .json files. Questions are asked randomly, one at a time, by different interviewers, using a range of random voice speeds etc. The question text will print to the console. If the user inputs "a" or "answer", the user's voice will then read the answer. Otherwise, pressing ENTER will advance to the next question.
+1. `do_interview()` will perform a mock interview using the voices defined in the script, and the questions from the .json files. Questions are asked randomly, one at a time, by different interviewers, using a range of random voice speeds etc. The question text will print to the console. If the user inputs "a" or "answer", the user's voice will then read the answer. Otherwise, pressing ENTER will advance to the next question, and entering "q", "quit" or "exit" will stop and exit.
 2. `save_all_as_audio()` will save a full interview (questions and answers) as `output.mp3`. This does not involve any user interaction.
 
 
