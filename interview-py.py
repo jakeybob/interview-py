@@ -188,9 +188,9 @@ if __name__ == "__main__":
     generic_questions = "questions_generic.json"        # path to json file of general questions
     specific_questions = "questions_specific.json"      # path to json file of questions specific to interview
 
-    with open("questions_generic.json") as fp:
+    with open(generic_questions) as fp:
         GENERIC_INTERVIEW_QUESTIONS = json.load(fp)
-    with open("questions_specific.json") as fp:
+    with open(specific_questions) as fp:
         SPECIFIC_INTERVIEW_QUESTIONS = json.load(fp)
 
     # join (for dupes, entry in 2nd dict takes precedence)
